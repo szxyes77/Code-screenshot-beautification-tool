@@ -13,7 +13,7 @@
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Electron](https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white)](https://www.electronjs.org/)
 
-[在线体验](https://xiangmu2.vercel.app) · [下载桌面版](https://github.com/szxyes77/Code-screenshot-beautification-tool/releases) · [报告问题](https://github.com/szxyes77/Code-screenshot-beautification-tool/issues)
+[在线体验](https://szxyes77.github.io/Code-screenshot-beautification-tool/) · [下载桌面版](https://github.com/szxyes77/Code-screenshot-beautification-tool/releases) · [报告问题](https://github.com/szxyes77/Code-screenshot-beautification-tool/issues)
 
 </div>
 
