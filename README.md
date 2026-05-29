@@ -65,7 +65,7 @@
 
 ## 在线演示
 
-🌐 **立即体验：** **[https://xiangmu2.vercel.app](https://xiangmu2.vercel.app)**
+🌐 **立即体验：** **(https://szxyes77.github.io/Code-screenshot-beautification-tool/)**
 
 在浏览器中打开即可使用，无需安装。
 
@@ -77,8 +77,8 @@
 
 | 文件 | 说明 |
 |------|------|
-| `CodeSnapshot-x.x.x-portable.exe` | 🎒 免安装便携版，双击即用 |
-| `CodeSnapshot-x.x.x-setup.exe` | 📥 NSIS 安装版，可选安装目录与桌面快捷方式 |
+| `CodeSnapshot-1.0.0-portable.exe` | 🎒 免安装便携版，双击即用 |
+| `CodeSnapshot-1.0.0-setup.exe` | 📥 NSIS 安装版，可选安装目录与桌面快捷方式 |
 
 ---
 
