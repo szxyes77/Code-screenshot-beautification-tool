@@ -1,4 +1,5 @@
 import { memo, useMemo } from 'react'
+import { EXPORT_CARD_ID } from '../lib/exportImage.js'
 
 /**
  * @typedef {import('../themes.js').CodeTheme} CodeTheme
@@ -37,6 +38,7 @@ function PreviewCard({
 
   return (
     <div
+      id={EXPORT_CARD_ID}
       className="inline-block w-full max-w-full overflow-hidden rounded-2xl shadow-lg transition duration-300 hover:-translate-y-0.5 hover:shadow-xl"
       style={backgroundStyle}
     >

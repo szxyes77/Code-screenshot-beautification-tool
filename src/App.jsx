@@ -3,7 +3,6 @@ import {
   Suspense,
   useCallback,
   useMemo,
-  useRef,
   useState,
 } from 'react'
 import ExportOverlay from './components/ExportOverlay.jsx'
@@ -41,8 +40,6 @@ export default function App() {
   const [isExporting, setIsExporting] = useState(false)
   const [copySuccess, setCopySuccess] = useState(false)
   const [toast, setToast] = useState(/** @type {{ message: string, type: 'info'|'success'|'warning'|'error' } | null} */ (null))
-
-  const previewRef = useRef(/** @type {HTMLDivElement | null} */ (null))
 
   const currentTheme = useMemo(
     () => CODE_THEMES.find((t) => t.id === themeId) ?? CODE_THEMES[0],
@@ -123,7 +120,9 @@ export default function App() {
   }, [code, showToast])
 
   const handleExport = useCallback(async () => {
-    if (!previewRef.current) {
+    const cardEl = document.getElementById('code-snapshot-card')
+
+    if (!cardEl) {
       showToast('warning', '预览尚未就绪，请等待高亮加载完成')
       return
     }
@@ -136,7 +135,7 @@ export default function App() {
     setIsExporting(true)
     try {
       await exportElementToPng(
-        previewRef.current,
+        cardEl,
         `CodeSnapshot-${Date.now()}.png`,
       )
       showToast('success', 'PNG 图片已成功导出到下载目录')
@@ -221,7 +220,7 @@ export default function App() {
               {!highlighterReady ? (
                 <LazySectionFallback label="语法高亮引擎" />
               ) : (
-                <div ref={previewRef} className="w-full max-w-full">
+                <div className="w-full max-w-full">
                   <Suspense fallback={<LazySectionFallback label="预览卡片" />}>
                     <PreviewCard
                       highlightedHtml={highlightedHtml}
