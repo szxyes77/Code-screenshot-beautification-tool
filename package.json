@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d dist"，
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview",
     "analyze": "cross-env ANALYZE=true vite build",
     "electron:dev": "concurrently -k \"vite\" \"wait-on http://localhost:5173 && electron .\"",
