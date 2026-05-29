@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
   const isProduction = mode === 'production'
 
   return {
-    base: '/Code-screenshot-beautification-tool/',
+    base: './',
 
     define: {
       'import.meta.env.VITE_APP_VERSION': JSON.stringify(pkg.version),
