@@ -77,8 +77,8 @@
 
 | 文件 | 说明 |
 |------|------|
-| `CodeSnapshot-x.x.x-portable.exe` | 🎒 免安装便携版，双击即用 |
-| `CodeSnapshot-x.x.x-setup.exe` | 📥 NSIS 安装版，可选安装目录与桌面快捷方式 |
+| `CodeSnapshot-1.0.0-portable.exe` | 🎒 免安装便携版，双击即用 |
+| `CodeSnapshot-1.0.0-setup.exe` | 📥 NSIS 安装版，可选安装目录与桌面快捷方式 |
 
 ---
 
